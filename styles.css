@@ -6,9 +6,13 @@
 }
 a {
   text-decoration: none;
+  color: #9C8D7B;
 }
 a:visited {
   color: #2A3026;
+}
+#faclink:visited {
+  color: #9C8D7B;
 }
 a:active {
     color: #9C8D7B;
@@ -49,6 +53,7 @@ a:active {
   border-width: 12px;
   border-color: #FFFFFF;*/
   /*margin: 0;*/
+  box-shadow: 0px 14px 38px 2px #2A3026;
 }
 .nav {
   width: 80%;
@@ -247,6 +252,19 @@ blockquote {
 }
 .box {
   display: flex;
+  transition: .2s ease;
+}
+.box:hover {
+  box-shadow: 0px 0px 0px 5px #2A3026;
+}
+
+.box:hover .textbg {
+  color: #2A3026;
+  background: #F2F2E8;
+}
+.box:hover .textbg2 {
+  color: #2A3026;
+  background: #F2F2E8;
 }
 .textbg {
   background: #2A3026;
@@ -270,18 +288,20 @@ blockquote {
   /*height: 540px;*/
   /*margin-top: 70px;*/
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.filler {
+/*.filler {
   width: 50%;
   margin: auto;
   height: 15px;
-}
+}*/
 .newsbg {
   vertical-align: top;
   background-color: #FFFFFF;
   width: 60%;
-  margin: auto;
-  margin-top: 100px;
+  /*margin: auto;*/
   /*margin-top: 200px*/
   /*float: left;*/
   /*margin: auto;*/
